@@ -25,7 +25,7 @@ const [stuff, getData] = useState([]);
           <div className='img-div'>
             <img className='thumbnail' src={items.thumbnail.location + items.thumbnail.images.small} alt='thumbnail'/>
             <div className='innerContainer'>
-              <a className='title' href={items.url}><h1>{items.title}</h1></a>
+              <a className='title' href={items.url}><h1>{"'"+ items.title +"'"}</h1></a>
               <div className='authorStuff-comments'>
                   <div className='author-stuff'>
                       <img className='author-avi' src= {items.author.avatar} alt='author img'/>
